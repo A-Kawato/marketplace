@@ -4,4 +4,5 @@ services:
     nodejs-web:
         image: akawato2018/nodejsweb:0.1
     ports:
-     - "8000:3000"
+    - "8000:3000"
+    
