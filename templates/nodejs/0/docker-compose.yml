@@ -5,4 +5,3 @@ services:
         image: akawato2018/nodejsweb:0.1
     ports:
      - "8000:3000"
-restart: always
