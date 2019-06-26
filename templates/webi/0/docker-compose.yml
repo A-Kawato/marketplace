@@ -1,1 +1,7 @@
+version: '2'
 
+services:
+    webi:
+        image: akawato2018/webi:latest
+ports:
+  - "8000:3000"
