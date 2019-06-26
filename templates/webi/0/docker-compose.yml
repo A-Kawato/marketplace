@@ -5,4 +5,5 @@ services:
         image: akawato2018/webi:0.0
         ports:
          - "8000:3000"
+
        
