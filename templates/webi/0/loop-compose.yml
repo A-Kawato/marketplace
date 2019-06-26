@@ -1,1 +1,4 @@
-
+.catalog:
+  name: Nodejs web test
+  version: 0.1
+  uuid: webi-0
