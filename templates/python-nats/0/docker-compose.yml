@@ -1,7 +1,13 @@
-version: '2'
+version: "2"
 
 services:
-    superset:
-        image: akawato2018/pynats:0.0
-        ports:
-         - "8000:80"
+  websq:
+    image: akawato2018/web-sq:0.0
+    volumes:
+      - datastore:/usr/src/app/db
+volumes:
+  datastore:
+    driver_opts:
+      type: none
+      device: /var/lib/customer/ftp-data/
+      o: bind
