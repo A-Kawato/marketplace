@@ -6,11 +6,4 @@ services:
     ports:
          - "8000:3000"
     network_mode: bridge
-    volumes:
-      - datastore:/usr/src/app/db
-volumes:
-  datastore:
-    driver_opts:
-      type: none
-      device: /var/lib/customer/ftp-data/
-      o: bind
+  
