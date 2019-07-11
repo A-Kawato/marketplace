@@ -2,7 +2,7 @@ version: "2"
 
 services:
   websq:
-    image: akawato2018/web-sq:0.0
+    image: akawato2018/web-sq:0.1
     ports:
          - "8000:3000"
     network_mode: bridge
