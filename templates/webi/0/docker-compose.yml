@@ -1,7 +1,7 @@
 version: '2'
 services:
     websample:
-        image: akawato2018/webi:0.1
+        image: akawato2018/product-inspection:0.0
         ports:
          - "8000:3000"
         network_mode: bridge
