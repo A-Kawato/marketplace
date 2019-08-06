@@ -1,8 +1,16 @@
-version: '2'
+version: "2"
 
 services:
-    nodejs-web:
-        image: akawato2018/nodejsweb:0.1
-ports:
-  - "8000:3000"
-  
+  product_inspection:
+    image: akawato2018/product-inspection:0.0
+    ports:
+         - "8000:3000"
+    network_mode: bridge
+    volumes:
+      - datastore:/usr/src/app/public/db
+volumes:
+  datastore:
+    driver_opts:
+      type: none
+      device: /var/lib/customer/ftp-data/
+      o: bind
