@@ -11,6 +11,6 @@ services:
 volumes:
   datastore:
     driver_opts:
-      type: none
+      type: bind
       device: /var/lib/customer/ftp-data/
       o: bind
