@@ -7,5 +7,10 @@ services:
          - "8000:3000"
     network_mode: bridge
     volumes:
-      - /var/lib/customer/ftp-data/:datastore:/usr/src/app/public/db
-
+    - datastore:/usr/src/app/db
+volumes:
+  datastore:
+    driver_opts:
+      type: bind
+      device: /var/lib/customer/ftp-data/
+      o: bind
